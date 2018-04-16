@@ -1,0 +1,27 @@
+# Site settings
+title: Ashish Here
+description: Who am I
+
+# the base hostname & protocol for your site
+url: "ab6995.github.io" 
+
+# the subpath of your site, e.g. /blog
+# baseurl: "/blog" 
+
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
+
+# User settings
+username: Ashish bansal
+user_description: A good person
+user_title: Data And Software Engineer
+email: ab6995@nyu.edu
+twitter_username: ab6995
+github_username:  ab6995
+linkedin_username: ashish-bansal-7b0b129a
+
+# Google-analytics
+google-analytics:
+  id: ""
+
+exclude: ['package.json', 'src' , 'node_modules']
