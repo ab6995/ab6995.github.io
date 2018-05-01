@@ -12,7 +12,7 @@ markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 
 # User settings
-username: Ashish bansal
+username: Ashish Bansal
 user_description: A good person
 user_title: Data And Software Engineer
 email: ab6995@nyu.edu
