@@ -1,8 +1,8 @@
 
 ---
 layout: posts
-title: "Run Apache Spark(2.0) On a local machine"
-date: 2018-05-01
+title: "knapsack problem"
+date: 2017-08-30
 ---
 # Running Apache Spark on Local Machine Using Python
 """
