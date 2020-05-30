@@ -13,8 +13,8 @@ permalink: /blog/:year/:month/:day/:title
 
 # User settings
 username: Ashish Bansal
-user_description: A good person
-user_title: Data Engineer at Vanguard
+user_description: ML Engineer whose interests lies in NLP, Speech and Distributed Computing
+user_title: Machine Learning Engineer at Vanguard
 email: ab6995@nyu.edu
 twitter_username: ab6995
 github_username:  ab6995
