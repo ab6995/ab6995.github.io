@@ -1,134 +1,95 @@
---- 
-layout: resume 
-title: Ashish Bansal 
 ---
-<h1>{{ page.title }}</h1>
-<ul class="resume">
-	<ul id=contact-info>
+layout: resume
+title: Ashish Bansal
+---
 
-		<li>ab6995@nyu.edu</li>
-		<li>+1 (631) 552-1865</li>
-		<li>15 Crooke Avenue, Apt #5C Brooklyn, NY, 11226</li>
-	</ul>
+<header class="resume-hero">
+  <h1>{{ page.title }}</h1>
+  <p class="resume-subtitle">Principal Machine Learning Engineer | Enterprise AI, GenAI, Speech AI & LLM Infrastructure</p>
+  <p class="resume-contact">
+    <a href="mailto:{{site.email}}">{{site.email}}</a> ·
+    <a href="https://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" rel="noopener">LinkedIn</a> ·
+    <a href="https://github.com/{{site.github_username}}" target="_blank" rel="noopener">GitHub</a>
+  </p>
+</header>
 
-	<p>Innovated and motivated Data and Software engineer, with two years of experience in object-oriented design, Machine learning, Big Data technologies, deep knowledge of data structure and algorithms. Currently looking for full-time opportunities as
-	Data Engineer/Data Scientist/Software Engineer.</p>
+<section>
+  <h2>Summary</h2>
+  <p>Principal Machine Learning Engineer with deep experience building production AI systems for financial services. I specialize in Generative AI, LLM deployment, speech recognition, NLP, MLOps, responsible AI governance, and cost-efficient enterprise AI platforms. My work spans research, architecture, hands-on engineering, mentoring, stakeholder leadership, and production operations.</p>
+</section>
 
-	<h2 id="education">Education</h2>
+<section>
+  <h2>Core Strengths</h2>
+  <ul class="two-column-list">
+    <li>Generative AI, LLM fine-tuning, RAG, LLM evaluation, preference alignment</li>
+    <li>Speech AI, NLP, summarization, PII protection, responsible AI controls</li>
+    <li>Model serving, Kubernetes, AWS, scalable inference, observability, MLOps</li>
+    <li>GPU-aware AI architecture, cost optimization, latency optimization, SLA design</li>
+    <li>Enterprise architecture, stakeholder communication, mentoring, AI strategy</li>
+    <li>Python, Spark, SQL, Docker, distributed systems, data engineering</li>
+  </ul>
+</section>
 
-	<p><strong>New York University, TANDON SCHOOL OF ENGINEERING, </strong>BROOKLYN, NY     Aug 2016 – May 2018</p>
+<section>
+  <h2>Professional Experience</h2>
 
-	<ul>
-		<li>Masters of Science in Computer Science(GPA 3.633)</li>
-	</ul>
+  <div class="resume-item">
+    <h3>The Vanguard Group</h3>
+    <p><em>Principal Machine Learning Engineer, Enterprise AI Research</em> · 2018 – Present</p>
+    <ul>
+      <li>Lead and build production-grade AI and ML systems across Generative AI, NLP, speech AI, MLOps, data protection, and enterprise AI platform capabilities.</li>
+      <li>Helped deliver AI products and platforms associated with more than $10M in operational efficiency and cost impact across enterprise use cases.</li>
+      <li>Built and scaled a proprietary financial-domain ASR system that achieved 98.7% internal accuracy, materially outperformed a cloud transcription baseline, and operated at roughly 15x lower cost.</li>
+      <li>Contributed to privacy-preserving AI capabilities, including sensitive-data protection and PII redaction patterns that enable safer enterprise GenAI adoption.</li>
+      <li>Led architecture and engineering design for advisor-client call summarization and agent-assist workflows, including model quality controls and production-readiness considerations.</li>
+      <li>Contributed to DeepCI, a production cost-intelligence platform associated with approximately $5.5M–$6M in annualized savings and multi-year enterprise adoption.</li>
+      <li>Develop reusable blueprints for deploying AI applications with strong attention to cost, latency, reliability, governance, security, and user adoption.</li>
+      <li>Mentor engineers and contribute to enterprise AI strategy, responsible AI practices, and cross-functional decision-making.</li>
+    </ul>
+  </div>
 
-	<p><strong>SRM University, NCR CAMPUS,</strong> INDIA     Aug 2011 - May 2015</p>
+  <div class="resume-item">
+    <h3>MTA New York City Transit</h3>
+    <p><em>Systems & Data Science Research Intern</em> · 2017 – 2018</p>
+    <ul>
+      <li>Built Python-based APIs, ETL scripts, analytics workflows, and machine learning classifiers for performance metrics and ridership insights.</li>
+      <li>Worked with real-time data pipelines using Kafka and streaming data sources.</li>
+    </ul>
+  </div>
 
-	<ul>
-		<li>Bachelors of Technology in Computer Science (GPA 3.4)</li>
-	</ul>
+  <div class="resume-item">
+    <h3>HCL Technologies</h3>
+    <p><em>Software Engineer Intern</em> · 2015 – 2016</p>
+    <ul>
+      <li>Worked on C++ software development, bug tracking, requirement implementation, and agile delivery practices.</li>
+    </ul>
+  </div>
+</section>
 
-	<h2 id="technicalskills">Technical Skills</h2>
+<section>
+  <h2>Selected AI Systems & Research</h2>
+  <ul>
+    <li><strong>CALM-LLM:</strong> First-author research on cost-aware LLM deployment, dynamic autoscaling, tenancy, cold-start optimization, TTFT/ITL tradeoffs, and SLA-aware orchestration; accepted for IEEE AAIML oral presentation.</li>
+    <li><strong>Rubric-Grounded SME Preference Alignment:</strong> Designed a framework using structured SME feedback, LLM-as-judge rubrics, rubric validation, and GRPO fine-tuning for financial-advisory summarization quality.</li>
+    <li><strong>Enterprise GenAI Platform:</strong> Built domain-aligned LLM and reusable adoption patterns for secure, cost-conscious GenAI use in financial-services workflows.</li>
+    <li><strong>ASR for Financial Conversations:</strong> Built privacy-preserving transcription capabilities that improved accuracy and reduced operating cost versus external alternatives.</li>
+    <li><strong>AI Data Protection:</strong> Developed AI-powered sensitive-data protection patterns to support responsible enterprise AI adoption.</li>
+  </ul>
+</section>
 
-	<ul>
-		<li><strong>Languages</strong> : Python, C, C++, Java, SQL, HTML, Prolog, R, Shell, HTML5, CSS3, SQL, Apache Spark, Pig</li>
+<section>
+  <h2>Education</h2>
+  <div class="resume-item">
+    <h3>New York University, Tandon School of Engineering</h3>
+    <p>M.S. in Computer Science</p>
+  </div>
+  <div class="resume-item">
+    <h3>SRM University</h3>
+    <p>B.Tech. in Computer Science</p>
+  </div>
+</section>
 
-		<li><strong>Frameworks</strong> : Django</li>
-
-		<li><strong>Database</strong> : MongoDB, PostgreSQL, Cassandra, SQLite, Mysql</li>
-
-		<li><strong>DevOps</strong> : Jenkins, Docker</li>
-
-		<li><strong>Tools &amp; Methods</strong> : Linux, Agile, Scrum, RESTful APIs, ElasticSearch, Microsoft Suite, Oracle 9i, IntelliJ, Scikit-learn, Jupyter, Visio, Git, Tensorflow, MySql workbench, AWS, Kafka, Rabbit mq, zmq</li>
-	</ul>
-
-	<h2 id="professionalexperience">Professional Experience</h2>
-
-	<p><strong>MTA New York City Transit, New York, USA</strong></p>
-
-	<p><em>SYSTEM &amp; DATA SCIENCE RESEARCH INTERN</em>      SEP 2017 – Present</p>
-
-	<ul>
-		<li>Built an api using python for calculating performance metrics and ridership estimations by producing aggregated data</li>
-
-		<li>Writing and maintaining ETL scripts</li>
-
-		<li>Implementing KAFKA to build real-time data pipelines and streaming applications by collecting data from different zmq's</li>
-
-		<li>Built different classifiers to predict future performance metrics using machine learning classification algorithms</li>
-
-		<li>Statistical analysis done to gain insights of the performance metrics</li>
-	</ul>
-
-	<p><strong>HCL TECHNOLOGIES, NOIDA, INDIA</strong></p>
-
-	<p><em>SOFTWARE ENGINEER INTERN</em>     OCT 2015 - APRIL 2016</p>
-
-	<ul>
-		<li>Performed bug tracking in C++</li>
-
-		<li>Designed and developed software for operating systems</li>
-
-		<li>Fixed ill-defined requirements of the software</li>
-
-		<li>Deployment of various requirements using Scrum Methodology</li>
-	</ul>
-
-
-
-	<h2 id="projects">Projects</h2>
-
-	<p>iNEWS      SEP 2017 - DEC 2017</p>
-
-	<ul>
-		<li>Mobile application that uses a News API to fetch the latest news from sources including CNN and the New York Times
- 			and deliver it to the user; whether or not user is connected to the Internet</li>
-
-		<li>Sends a push notification to user every day at 9 AM EST to awaken the app, so that the latest news can be downloaded</li>
-
-		<li>Developed backend of the application using Amazon Web Services such as Lambda, SQS, SNS and DynamoDB to
-			retrieve unique news from source. Also, developed APIs to retrieve and search news from AWS ElasticSearch</li>
-
-		<li>Two factor authentications are provided for security purposes using AWS Cognito</li>
-	</ul>
-
-	<p>ANALYZING NYPD COMPLAINT DATA (HISTORIC)     July2017 – Aug2017</p>
-
-	<ul>
-		<li>Analyzed NYPD Complaint data to uncover hidden patterns, unknown correlations, crime trends and other anomalies</li>
-
-		<li>Generated hypothesis based on revelations by correlating with datasets like Weather, census and employment data.</li>
-
-		<li>Used Spark Scripts, Map-reduce and Sql queries to clean data</li>
-
-		<li>Python libraries such as seaborn, matlib, bokeh and folium are used for data visualization</li>
-	</ul>
-
-	<p>YELP DATASET ANALYSIS     June2017 – July2017</p>
-
-	<ul>
-		<li>Performed some basic statistics like summarizing reviews by city and category, ratings of businesses around University of
-		Wisconsin-Madison, based on number of reviews on the dataset by executing scripts written in PigLatin and ApacheSpark</li>
-
-		<li>Performed port mapping to run Hue web Interface through local browser by setting cloudera quick start container in Docker</li>
-
-		<li>Created visualizations in Tableau based on data obtained from the resulted scripts</li>
-	</ul>
-
-	<p>CLASSIFIERS TO IDENTIFY TWITTER ACCOUNTS AS BOTS OR NOT BOTS      Jan 2017 – April 2017</p>
-
-	<ul>
-		<li>Built four classifiers (Multinomial Naive Bayes, Decision Trees, Logistic Regression and Random Forest) using python
-			libraries pandas to train our model to predict twitter accounts as bots</li>
-
-		<li>Compared model’s accuracy from different classifiers we built</li>
-	</ul>
-
-	<p>ANALYZING TRAITS SHARED BETWEEN TWO TWITTER USERS     April 2017 – May 2017</p>
-
-	<ul>
-		<li>Built a fully functional, Watson-powered application using Python to interact with the Twitter API and IBM's Personality Insights API in order to analyze traits shared between two Twitter users</li>
-
-		<li>Displayed the top 5 personality traits shared between two Twitter users</li>
-	</ul>
-</ul>
+<section>
+  <h2>Earlier Project Foundation</h2>
+  <p>Earlier academic and engineering projects included Spark and Hadoop analytics, NYPD complaint data analysis, Yelp dataset analysis, Twitter bot classification, IBM Watson Personality Insights, and an AWS-backed offline news mobile application. These projects formed the technical base for later large-scale enterprise AI work.</p>
+</section>
