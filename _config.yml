@@ -1,6 +1,6 @@
 # Site settings
-title: Ashish Bansal | Principal ML Engineer
-description: Principal Machine Learning Engineer focused on enterprise AI, GenAI platforms, speech AI, LLM optimization, responsible AI, and production-grade ML systems.
+title: Ashish Bansal | Principal AI/ML Engineer
+description: Principal AI/ML Engineer focused on LLM-powered applications, agentic systems, enterprise-scale AI platforms, speech analytics, RAG, model serving, and responsible AI.
 
 # the base hostname & protocol for your site
 url: "https://ab6995.github.io"
@@ -10,8 +10,8 @@ permalink: /blog/:year/:month/:day/:title
 
 # User settings
 username: Ashish Bansal
-user_description: Principal Machine Learning Engineer building secure, cost-efficient, production-scale AI systems for financial services.
-user_title: Principal Machine Learning Engineer | Enterprise AI & GenAI
+user_description: Principal AI/ML Engineer building safe, cost-efficient, production-scale AI systems for financial services.
+user_title: Principal AI/ML Engineer | LLMs, Agentic AI & Enterprise Platforms
 email: ab6995@nyu.edu
 twitter_username: ab6995
 github_username: ab6995
