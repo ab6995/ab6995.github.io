@@ -3,6 +3,54 @@
   <p>Enterprise AI · Agentic RAG · Speech AI · LLM Infrastructure · Responsible AI</p>
 </footer>
 <style>
+  .portfolio-brand {
+    width: auto !important;
+    min-width: 210px !important;
+    height: auto !important;
+    min-height: 48px !important;
+    padding: 6px 12px 6px 6px !important;
+    gap: 10px !important;
+    border-radius: 999px !important;
+    justify-content: flex-start !important;
+  }
+
+  .brand-initials {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
+    border-radius: 999px;
+    color: #101828;
+    background: #fff;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+  }
+
+  .brand-copy {
+    display: grid;
+    gap: 1px;
+    line-height: 1.05;
+  }
+
+  .brand-copy strong {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+  }
+
+  .brand-copy em {
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
   .adoption-rings {
     position: static !important;
     align-self: center !important;
@@ -43,6 +91,21 @@
   .adoption-rings span:nth-child(1)::before { content: "1"; }
   .adoption-rings span:nth-child(2)::before { content: "2"; }
   .adoption-rings span:nth-child(3)::before { content: "3"; }
+
+  @media only screen and (max-width: 760px) {
+    .portfolio-brand {
+      min-width: 0 !important;
+      padding-right: 10px !important;
+    }
+
+    .brand-copy strong {
+      font-size: 13px;
+    }
+
+    .brand-copy em {
+      font-size: 10px;
+    }
+  }
 </style>
 <script src="{{ "/assets/js/sweet-scroll.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
