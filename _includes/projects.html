@@ -1,81 +1,138 @@
-<div class="container">
-  <div class="user-details">
-    <h3> Featured Projects </h3>
-  </div>
-  <div class="row user-projects">
-    <div class="six columns images">
-      <img alt="code" src="{{ " /assets/img/creditcard.jpg " | prepend: site.baseurl }}" />
-    </div>
-    <div class="six columns">
-      <h5> Predicting Credit Card Defaulters </h5>
-      <li> Skills: Apache spark, pyspark, Python</li>
-      <p>Predicted credit card defaulters beforehand analyzing there payment history 
-        attributes such as average pay, average bill amount for the credit card companies to 
-        monitor there expenses and there payments through python script written using pyspark and pyspark.mllib.</p>
-      <a class="project-link" href="https://github.com/ab6995/predicting_creditcard_defaulters">Source Code</a>
+<div class="portfolio-section systems-section">
+  <div class="section-kicker">Selected systems</div>
+  <div class="section-heading-row compact-heading">
+    <div>
+      <h2>AI systems, platforms, and research at production scale</h2>
+      <p class="section-lede left-align">Each card highlights the problem space, the architecture pattern, and the measurable scale or outcome.</p>
     </div>
   </div>
-  <div class="row user-projects">
-    <div class="six columns">
-      <img alt="code" src="{{ " /assets/img/iNews.jpg " | prepend: site.baseurl }}" />
-    </div>
-    <div class="six columns">
-      <h5> iNEWS </h5>
-      <li> Skills: AWS, Python</li>
-      <p>Mobile application that uses a News API to fetch the latest news from sources including CNN and the New York Times
-        and deliver it to the user; whether or not user is connected to the Internet.</p>
-      <a class="project-link" href="https://www.youtube.com/watch?v=Fs2gekDDWo8">Demo</a> <a class="project-link" href="https://github.com/sauravmawandia/OfflineNews">Source Code</a>
-    </div>
+
+  <div class="case-study-grid">
+    <article class="case-card feature-case">
+      <div class="case-content">
+        <span class="case-tag">Agentic AI · Pinecone · Enterprise support</span>
+        <h3>Hybrid RAG Agent Assist</h3>
+        <p>Enterprise support assistant combining dense retrieval, Pinecone vector search, custom re-ranking, and context-aware generation.</p>
+        <div class="case-metrics">
+          <div><strong>+12%</strong><span>retrieval accuracy</span></div>
+          <div><strong>Lower AHT</strong><span>agent handling time</span></div>
+        </div>
+      </div>
+      <div class="system-diagram rag-diagram" aria-label="RAG architecture diagram">
+        <span>Policy content</span>
+        <i></i>
+        <span>Pinecone index</span>
+        <i></i>
+        <span>Re-ranker</span>
+        <i></i>
+        <span>Agent answer</span>
+      </div>
+    </article>
+
+    <article class="case-card">
+      <div class="case-content">
+        <span class="case-tag">Kubernetes · EKS · Inference gateway</span>
+        <h3>Unified Model Deployment Framework</h3>
+        <p>EKS-based framework serving LLMs, ASR, and ML models behind a single inference gateway with standardized orchestration and autoscaling.</p>
+        <div class="case-metrics">
+          <div><strong>3M+</strong><span>requests/day</span></div>
+          <div><strong>1</strong><span>shared gateway</span></div>
+        </div>
+      </div>
+      <div class="system-stack">
+        <span>Gateway</span><span>Autoscaling</span><span>LLM</span><span>ASR</span><span>Eval</span>
+      </div>
+    </article>
+
+    <article class="case-card">
+      <div class="case-content">
+        <span class="case-tag">vLLM · PagedAttention · LLM optimization</span>
+        <h3>Custom vLLM Serving for 30B Models</h3>
+        <p>Custom model architectures for 30B, 8B, and small language models using vLLM and PagedAttention for cost-effective proprietary model serving.</p>
+        <div class="case-metrics">
+          <div><strong>30B</strong><span>model scale</span></div>
+          <div><strong>2x</strong><span>throughput lift</span></div>
+        </div>
+      </div>
+      <div class="throughput-visual">
+        <div><span>Naive KV</span><b style="width: 48%"></b></div>
+        <div><span>PagedAttention</span><b style="width: 96%"></b></div>
+      </div>
+    </article>
+
+    <article class="case-card">
+      <div class="case-content">
+        <span class="case-tag">SDKs · Secure auth · Platform adoption</span>
+        <h3>Enterprise LLM Consumption Model</h3>
+        <p>Reusable Node.js and Python SDKs with secure token-based authentication for product teams building LLM-powered features.</p>
+        <div class="case-metrics">
+          <div><strong>6+</strong><span>product teams</span></div>
+          <div><strong>Faster</strong><span>time to production</span></div>
+        </div>
+      </div>
+      <div class="adoption-rings">
+        <span>SDK</span><span>Auth</span><span>Teams</span>
+      </div>
+    </article>
+
+    <article class="case-card">
+      <div class="case-content">
+        <span class="case-tag">Custom LLMs · NLP · Advice workflows</span>
+        <h3>Real-Time Advice Call Summarization</h3>
+        <p>Self-hosted custom LLMs and domain-specific business logic generate advisor-call summaries within one minute of conversation end.</p>
+        <div class="case-metrics">
+          <div><strong>10K+</strong><span>calls/day</span></div>
+          <div><strong>30x</strong><span>lower cost</span></div>
+        </div>
+      </div>
+      <div class="latency-card">
+        <span>Call ends</span>
+        <strong>&lt; 1 min</strong>
+        <span>Summary ready</span>
+      </div>
+    </article>
+
+    <article class="case-card">
+      <div class="case-content">
+        <span class="case-tag">ASR · PII redaction · Speech intelligence</span>
+        <h3>Enterprise Speech Analytics Platform</h3>
+        <p>Speech-to-text and NLP analytics platform with PII redaction, diarization, sentiment/emotion detection, and domain evaluation.</p>
+        <div class="case-metrics">
+          <div><strong>10M+</strong><span>calls/month</span></div>
+          <div><strong>130K+</strong><span>transcriptions/day</span></div>
+        </div>
+      </div>
+      <div class="audio-wave" aria-label="Audio waveform visualization">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+    </article>
   </div>
-  <div class="row user-projects">
-    <div class="six columns images">
-      <img alt="code" src="{{ " /assets/img/NYC_Crimes.jpg " | prepend: site.baseurl }}" />
+
+  <article class="research-panel">
+    <div class="research-copy">
+      <span class="case-tag">IEEE AAIML 2026 · Mar 20, 2026</span>
+      <h3>CALM: Cost-efficient, Model Agnostic, Low-latency Modular LLM Deployment Framework</h3>
+      <p>CALM is a purpose-built, cost-aware LLM deployment methodology for production AI teams. It addresses high third-party inference costs, dynamic SLA requirements, and always-on production reliability through dynamic autoscaling, workload-aware dedicated tenancy, and intelligent resource orchestration.</p>
+      <p>Empirical results demonstrate up to 5x inference cost reduction compared with managed hosted solutions under high-load conditions.</p>
+      <a class="primary-cta dark-cta" target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/abstract/document/11498121">Show publication</a>
     </div>
-    <div class="six columns">
-      <h5> ANALYZING NYPD COMPLAINT DATA (HISTORIC)</h5>
-      <li> Skills: Hadoop, Apache Spark, SQL, Python, Pandas</li>
-      <p>Analyzed NYPD Complaint data to uncover hidden patterns, unknown correlations, crime trends and other anomalies.
-        Generated hypothesis based on revelations by correlating with datasets like Weather, census and employment data.</p>
-      <a class="project-link" href="https://github.com/ab6995/BIG_DATA_Project">Source Code</a> <a class="project-link" href="https://drive.google.com/open?id=0B9CxnLfqgNFKRXl1UGNDdW1GR1U">Project Report</a>
+    <div class="research-visual">
+      <div class="cost-compare">
+        <div><span>Managed hosted</span><b style="height: 92%"></b></div>
+        <div><span>CALM</span><b style="height: 22%"></b></div>
+      </div>
+      <div class="research-stat"><strong>5x</strong><span>inference cost reduction</span></div>
     </div>
-  </div>
-  <div class="row user-projects">
-    <div class="six columns">
-      <img alt="code" src="{{ " /assets/img/Untitled.jpg" | prepend: site.baseurl }}" />
+  </article>
+
+  <div class="community-band">
+    <div>
+      <span class="section-kicker">Community</span>
+      <h3>Reviewer, coach, judge, and builder-community contributor</h3>
+      <p>IEEE Senior Member, peer reviewer for ACM, AAAI, and IEEE venues, Hackathon Raptors Fellow, Women in Data Science Hackathon coach, and Voxel51 Visual AI Hackathon judge.</p>
     </div>
-    <div class="six columns">
-      <h5>YELP DATASET ANALYSIS</h5>
-      <li> Skills: Python, Apache Spark, PigLatin, Hive, Map-Reduce, Docker</li>
-      <p> Performed some basic statistics like summarizing reviews by city and category, ratings of businesses around University of
-          Wisconsin-Madison, based on number of reviews on the dataset by executing scripts written in PigLatin and ApacheSpark
-      </p>
-      <a class="project-link" href="https://github.com/ab6995/Yelp_Dataset_Analysis">Source Code</a> <a class="project-link" href="https://drive.google.com/open?id=1UumLx9LrH0MA2I7jQhZCL2MSCD8XpwkS">Project Report</a>
-    </div>
-  </div>
-  <div class="row user-projects">
-    <div class="six columns images">
-      <img alt="code" src="{{ " /assets/img/twitter.jpg" | prepend: site.baseurl }}" />
-    </div>
-    <div class="six columns">
-      <h5> CLASSIFIERS TO IDENTIFY TWITTER ACCOUNTS AS BOTS OR NOT BOTS </h5>
-      <li> Skills: Python, Scikit-learn, Pandas, Numpy, scipy</li>
-      <p>A Built four classifiers (Multinomial Naive Bayes, Decision Trees, Logistic Regression and Random Forest) using python
-          libraries pandas to train our model to predict twitter accounts as bots.Compared model’s accuracy from different classifiers we built.
-      </p>
-      <a class="project-link" href="https://github.com/heng2j/-Twitter-Account-Bot-or-not-Bot">Source Code</a> <a class="project-link" href="https://drive.google.com/open?id=1Gm70ZQqdLrbNIdPq-iVzDjcf1brPdyOp1GSFRYMaWQQ">Project Report</a>
-    </div>
-  </div>
-  <div class="row user-projects">
-    <div class="six columns">
-      <img alt="code" src="{{ " /assets/img/Analysis.jpg" | prepend: site.baseurl }}" />
-    </div>
-    <div class="six columns">
-      <h5> ANALYZING TRAITS SHARED BETWEEN TWO TWITTER USERS </h5>
-      <li> Skills: Python, Scikit-learn, watson_developer_cloud, Watson Personality Insights API </li>
-      <p>Built a fully functional, Watson-powered application using Python to interact with the Twitter API and IBM's Personality Insights API in order to analyze traits shared between two Twitter users
-         and Displayed the top 5 personality traits shared between two Twitter users
-      </p>
-      <a class="project-link" href="https://github.com/ab6995/IBM-WATSON-API-S">Source Code</a>
+    <div class="community-pills">
+      <span>ACM ICAIF</span><span>AAAI</span><span>IEEE ICECET</span><span>IEEE ACDSA</span><span>ACM FINIR</span><span>Voxel51</span>
     </div>
   </div>
 </div>

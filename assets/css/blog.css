@@ -1,50 +1,147 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 body {
-    margin: 60px auto;
-    width: 70%;
-    font-family:'Montserrat',sans-serif;
-}
-nav ul, footer ul {
-    font-family:'Montserrat',sans-serif;
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Montserrat',sans-serif;
-}
-p {
-    font-size: 1em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+  margin: 48px auto;
+  width: 76%;
+  max-width: 980px;
+  font-family: 'Montserrat', sans-serif;
+  color: #263241;
+  background: #fbfcfe;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.2em;
+nav ul {
+  padding: 0;
+  list-style: none;
+  font-weight: 700;
+  border-bottom: 1px solid #e3e8ef;
+  padding-bottom: 18px;
+  margin-bottom: 34px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 22px;
+}
+
+a {
+  text-decoration: none;
+  color: #54516a;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 8px;
+  color: #1a222c;
+}
+
+h2 {
+  margin-top: 42px;
+  padding-top: 28px;
+  border-top: 1px solid #e3e8ef;
+  color: #1a222c;
+}
+
+h3 {
+  margin-bottom: 4px;
+  color: #1a222c;
+}
+
+p,
+li {
+  font-size: 1em;
+  line-height: 1.7em;
+  color: #354052;
+}
+
+.resume-hero {
+  background: #1a222c;
+  color: #fff;
+  padding: 34px 38px;
+  border-radius: 18px;
+  box-shadow: 0 14px 36px rgba(26, 34, 44, 0.15);
+}
+
+.resume-hero h1,
+.resume-hero p,
+.resume-hero a {
+  color: #fff;
+}
+
+.resume-subtitle {
+  margin: 0;
+  font-size: 1.12em;
+}
+
+.resume-contact {
+  margin-bottom: 0;
+}
+
+.resume-download {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.resume-download:hover {
+  background: #fff;
+  color: #1a222c;
+  text-decoration: none;
+}
+
+.resume-item {
+  margin-bottom: 26px;
+}
+
+.two-column-list {
+  columns: 2;
+  column-gap: 46px;
+}
+
+.two-column-list li {
+  break-inside: avoid;
+  margin-bottom: 8px;
+}
+
+ul.posts {
+  margin: 20px auto 40px;
+  font-size: 1.2em;
 }
 
 ul.posts li {
-    list-style: none;
+  list-style: none;
 }
 
 div.post-header {
-    text-align: center;
+  text-align: center;
+}
+
+@media only screen and (max-width: 760px) {
+  body {
+    width: 88%;
+    margin: 28px auto;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .resume-hero {
+    padding: 24px;
+  }
+
+  h1 {
+    font-size: 2.3em;
+  }
+
+  .two-column-list {
+    columns: 1;
+  }
 }

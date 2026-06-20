@@ -2,15 +2,16 @@
 <html lang="en">
   {% include head.html %}
   <body>
-      {% include header.html %}
+    {% include header.html %}
+    <main>
       <section id="about">
         {% include about.html %}
       </section>
       <section id="projects">
         {% include projects.html %}
       </section>
-        {{ content }}
-      {% include footer.html %}
-    <a href="http://xyz.freelogs.com/stats/a/ab6995/" target="_top"><img border="0" alt="web counter" src="http://xyz.freelogs.com/counter/index.php?u=ab6995&s=binky" ALIGN="middle" HSPACE="4" VSPACE="2"></a><script src=http://xyz.freelogs.com/counter/script.php?u=ab6995></script>
-    </a> 
+      {{ content }}
+    </main>
+    {% include footer.html %}
   </body>
+</html>

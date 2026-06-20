@@ -1,23 +1,20 @@
 # Site settings
-title: Ashish Here
-description: Who am I
+title: Ashish Bansal | Principal AI/ML Engineer
+description: Principal AI/ML Engineer focused on LLM-powered applications, agentic systems, enterprise-scale AI platforms, speech analytics, RAG, model serving, and responsible AI.
 
 # the base hostname & protocol for your site
-url: "ab6995.github.io" 
-
-# the subpath of your site, e.g. /blog
-# baseurl: "/blog" 
+url: "https://ab6995.github.io"
 
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 
 # User settings
 username: Ashish Bansal
-user_description: ML Engineer whose interests lies in NLP, Speech and Distributed Computing
-user_title: Machine Learning Engineer at Vanguard
+user_description: Principal AI/ML Engineer building safe, cost-efficient, production-scale AI systems for financial services.
+user_title: Principal AI/ML Engineer | LLMs, Agentic AI & Enterprise Platforms
 email: ab6995@nyu.edu
 twitter_username: ab6995
-github_username:  ab6995
+github_username: ab6995
 linkedin_username: ashish-bansal-7b0b129a
 
 # Google-analytics

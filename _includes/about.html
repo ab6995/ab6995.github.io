@@ -1,39 +1,100 @@
-<div class="container">
-  <div class="user-details">
-    <h3> Who am I </h3>
-  </div>
-  <div class="row user-projects">
-    <div class="six columns">
-      <img alt="me" src="{{ " /files/me.jpg " | prepend: site.baseurl }}" />
+<div class="portfolio-section scale-section">
+  <div class="section-kicker">Scale snapshot</div>
+  <div class="section-heading-row">
+    <div>
+      <h2>What I have built, and the scale it runs at</h2>
+      <p class="section-lede left-align">My work spans the full production AI lifecycle: research, data strategy, model optimization, platform engineering, reliability, evaluation, and enterprise adoption.</p>
     </div>
-    <div class="six columns">
-      <p>Innovative and motivated Data and Software engineer with two years of experience in "object-oriented design, Machine learning, Big Data technologies, deep knowledge of data structure and algorithms". My detailed expertise can be
-      found in <a class="link" href="{{site.url}}/resume">Resume</a></p>
-      <p>Besides coding, I always explore the recent trends in the fitness industry and being a fitness enthusiast, I want to contribute to this industry in the future. </p>
-      <p>I pick something new to learn every year and new adventures to complete. Life is officially too short for my long list of things to learn.</p>
+    <div class="profile-mini-card">
+      <img alt="Ashish Bansal" src="{{ "/files/me.jpg" | prepend: site.baseurl }}" />
+      <div>
+        <strong>Ashish Bansal</strong>
+        <span>Principal AI/ML Engineer</span>
+      </div>
     </div>
   </div>
 
+  <div class="metric-dashboard">
+    <article class="metric-tile primary-metric">
+      <span class="metric-label">Platform throughput</span>
+      <strong>3M+</strong>
+      <p>daily requests served by enterprise model deployment infrastructure.</p>
+    </article>
+    <article class="metric-tile">
+      <span class="metric-label">RAG quality</span>
+      <strong>+12%</strong>
+      <p>answer retrieval accuracy improvement from hybrid RAG Agent Assist.</p>
+    </article>
+    <article class="metric-tile">
+      <span class="metric-label">LLM serving</span>
+      <strong>30B</strong>
+      <p>custom model architectures served through vLLM and PagedAttention.</p>
+    </article>
+    <article class="metric-tile">
+      <span class="metric-label">Advice operations</span>
+      <strong>10K+</strong>
+      <p>daily advice calls summarized within one minute of conversation end.</p>
+    </article>
+    <article class="metric-tile">
+      <span class="metric-label">Cost efficiency</span>
+      <strong>30x</strong>
+      <p>lower call summarization cost compared with commercial solutions.</p>
+    </article>
+    <article class="metric-tile">
+      <span class="metric-label">Speech analytics</span>
+      <strong>10M+</strong>
+      <p>calls processed monthly with ASR, PII redaction, diarization, and NLP.</p>
+    </article>
+  </div>
 
-  <div class="row user">
-    <div class="four columns">
-      <h5>Code</h5>
-      <i class="devicon-python-plain-wordmark"></i>
-      <i class="devicon-java-plain-wordmark colored"></i>
-      <i class="devicon-cplusplus-plain colored"></i>
+  <div class="visual-story-grid">
+    <article class="story-card">
+      <h3>Production AI lifecycle</h3>
+      <div class="lifecycle-flow">
+        <span>Research</span>
+        <span>Data</span>
+        <span>Model</span>
+        <span>Serve</span>
+        <span>Monitor</span>
+      </div>
+      <p>Owns the bridge from research hypothesis to production deployment, monitoring, and operational handoff.</p>
+    </article>
+
+    <article class="story-card">
+      <h3>Impact areas</h3>
+      <div class="impact-bars">
+        <div class="bar-row"><span>LLM platforms</span><div class="bar-track"><i style="width: 96%"></i></div></div>
+        <div class="bar-row"><span>RAG / Agents</span><div class="bar-track"><i style="width: 88%"></i></div></div>
+        <div class="bar-row"><span>Speech AI</span><div class="bar-track"><i style="width: 92%"></i></div></div>
+        <div class="bar-row"><span>Reliability</span><div class="bar-track"><i style="width: 84%"></i></div></div>
+      </div>
+    </article>
+
+    <article class="story-card">
+      <h3>Role evolution</h3>
+      <ol class="timeline-list">
+        <li><strong>2018</strong><span>AI/ML Engineer: ASR, NLP, Spark/Kafka pipelines</span></li>
+        <li><strong>2020</strong><span>Senior AI/ML Engineer: summarization, speech analytics, mentoring</span></li>
+        <li><strong>2023</strong><span>Principal AI/ML Engineer: LLM platforms, vLLM, RAG, reliability</span></li>
+      </ol>
+    </article>
+  </div>
+
+  <div class="capability-grid">
+    <div class="capability-card">
+      <span>01</span>
+      <h3>LLM & Agentic AI</h3>
+      <p>RAG architectures, prompt and context engineering, agent design, LLM evaluation, optimization, quantization, and Azure OpenAI Services.</p>
     </div>
-    <div class="four columns">
-      <h5>Frameworks</h5>
-      <i class="devicon-apache-plain-wordmark colored"></i>
-      <i class="devicon-django-plain colored"></i>
-      <i class="devicon-oracle-original colored"></i>
+    <div class="capability-card">
+      <span>02</span>
+      <h3>ML Systems</h3>
+      <p>NLP, ASR, speaker verification, sentiment analysis, model serving, Kubernetes, Docker, AWS, Azure, Spark, Kafka, and vector databases.</p>
     </div>
-    <div class="four columns">
-      <h5>Tools</h5>
-      <i class="devicon-git-plain-wordmark colored"></i>
-      <i class="devicon-postgresql-plain-wordmark colored"></i>
-      <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
-      <i class="devicon-docker-plain-wordmark colored"></i>
+    <div class="capability-card">
+      <span>03</span>
+      <h3>Leadership</h3>
+      <p>Enterprise AI architecture, research-to-production delivery, reliability stabilization, mentoring, peer review, hackathon coaching, and responsible AI.</p>
     </div>
   </div>
 </div>
