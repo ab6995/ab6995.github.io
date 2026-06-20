@@ -1,28 +1,50 @@
 <div class="container">
   <div class="user-details">
     <h3>Selected Work & Research</h3>
-    <p class="section-lede">A representative snapshot of enterprise AI systems, applied research, and production architecture work.</p>
+    <p class="section-lede">A representative snapshot of enterprise AI systems, applied research, production architecture, and developer-community work.</p>
   </div>
 
   <div class="row user-projects portfolio-card">
     <div class="six columns images">
-      <div class="project-visual">ASR</div>
+      <div class="project-visual">RAG</div>
     </div>
     <div class="six columns">
-      <h5>Financial-Domain Automatic Speech Recognition</h5>
-      <p class="project-meta">Speech AI · Privacy-preserving ML · Production platform</p>
-      <p>Led and contributed to a proprietary ASR capability for sensitive financial conversations. The system achieved 98.7% internal accuracy, outperformed a major cloud transcription baseline, reduced operating cost by roughly 15x, and supported millions of dollars in annual savings while improving privacy controls.</p>
+      <h5>Hybrid RAG Agent Assist</h5>
+      <p class="project-meta">Agentic AI · Pinecone · Enterprise support</p>
+      <p>Led development of an enterprise Agent Assist capability that combines dense retrieval, Pinecone vector search, custom re-ranking, and context-aware generation. The system improved answer retrieval accuracy by 12%, reduced average agent call-handling time, and was featured in a public Pinecone customer story.</p>
     </div>
   </div>
 
   <div class="row user-projects portfolio-card">
     <div class="six columns">
-      <div class="project-visual">LLM</div>
+      <div class="project-visual">EKS</div>
     </div>
     <div class="six columns">
-      <h5>Enterprise GenAI Platform, Domain LLMs & Protect</h5>
-      <p class="project-meta">Generative AI · PII protection · Responsible AI</p>
-      <p>Built and scaled internal GenAI capabilities for financial-services workflows, including domain-aligned LLMs, reusable adoption blueprints, and AI-powered data protection for sensitive information. The work helped accelerate safe enterprise adoption while reducing dependency on higher-cost vendor-only patterns.</p>
+      <h5>Unified Model Deployment Framework</h5>
+      <p class="project-meta">Kubernetes · Model serving · Platform engineering</p>
+      <p>Developed an EKS-based deployment framework that serves LLMs, ASR, and other ML models behind a single inference gateway. The platform scales to 3M+ requests per day while standardizing orchestration, autoscaling, and per-model deployment workflows.</p>
+    </div>
+  </div>
+
+  <div class="row user-projects portfolio-card">
+    <div class="six columns images">
+      <div class="project-visual">vLLM</div>
+    </div>
+    <div class="six columns">
+      <h5>Custom vLLM Serving for 30B Models</h5>
+      <p class="project-meta">LLM infrastructure · PagedAttention · Cost optimization</p>
+      <p>Wrote custom model architectures for 30B, 8B, and small language models in the vLLM serving framework. Leveraging PagedAttention delivered about 2x throughput improvement over naive KV-cache allocation and enabled cost-effective serving of proprietary models at enterprise scale.</p>
+    </div>
+  </div>
+
+  <div class="row user-projects portfolio-card">
+    <div class="six columns">
+      <div class="project-visual">SDK</div>
+    </div>
+    <div class="six columns">
+      <h5>Enterprise LLM Service Consumption Model</h5>
+      <p class="project-meta">SDKs · Secure auth · Platform adoption</p>
+      <p>Architected reusable Node.js and Python SDKs with secure token-based authentication for enterprise LLM consumption. The model was adopted by 6+ product teams, eliminated redundant platform builds, and accelerated time-to-production for LLM-powered features.</p>
     </div>
   </div>
 
@@ -31,20 +53,20 @@
       <div class="project-visual">SUM</div>
     </div>
     <div class="six columns">
-      <h5>Advisor-Client Call Summarization & Agent Assist</h5>
-      <p class="project-meta">NLP · Summarization · Human-in-the-loop AI</p>
-      <p>Architected AI systems for advisor-client interaction intelligence, including summarization and agent-assist workflows. The work combined engineering design, stakeholder alignment, quality controls, and collaboration with external partners to move from prototype to practical enterprise use.</p>
+      <h5>Real-Time Advice Call Summarization</h5>
+      <p class="project-meta">Custom LLMs · NLP · Financial advice</p>
+      <p>Developed a real-time call summarization system for 10K+ daily advice calls, generating summaries within one minute of conversation end using self-hosted custom LLMs and domain-specific business logic. The system achieved 90% summarization accuracy at 30x lower cost compared with commercial solutions.</p>
     </div>
   </div>
 
   <div class="row user-projects portfolio-card">
     <div class="six columns">
-      <div class="project-visual">ROI</div>
+      <div class="project-visual">ASR</div>
     </div>
     <div class="six columns">
-      <h5>DeepCI Cost Intelligence Platform</h5>
-      <p class="project-meta">Analytics · ML systems · Enterprise savings</p>
-      <p>Contributed to a production cost-intelligence platform that has supported multiple enterprise use cases for years, with reported annualized savings in the $5.5M–$6M range. The platform demonstrates how durable ML systems can compound business value over time.</p>
+      <h5>Enterprise Speech Analytics Platform</h5>
+      <p class="project-meta">ASR · PII redaction · Speech intelligence</p>
+      <p>Built and scaled an enterprise speech-to-text and NLP analytics platform with PII redaction, speaker diarization, and sentiment/emotion detection. The platform processes tens of millions of calls per month across multiple lines of business and surfaces actionable insights for operations leaders.</p>
     </div>
   </div>
 
@@ -53,24 +75,24 @@
       <div class="project-visual">CALM</div>
     </div>
     <div class="six columns">
-      <h5>CALM-LLM: Cost-Aware LLM Deployment</h5>
-      <p class="project-meta">LLM infrastructure · Autoscaling · Applied research</p>
-      <p>First-author research on production-centric LLM deployment economics, covering cost-aware scaling, tenancy, cold starts, TTFT/ITL, and SLA-aware orchestration. The work demonstrates up to 5x cost reduction in high-load scenarios and was accepted for an IEEE AAIML oral presentation.</p>
+      <h5>Cost-Efficient, Model-Agnostic LLM Deployment</h5>
+      <p class="project-meta">IEEE AAIML 2026 · LLM optimization · Research</p>
+      <p>Published research on low-latency, cost-efficient LLM deployment. The work covers model-agnostic optimization, quantization, distillation, serving economics, and production patterns for safe and efficient enterprise-scale LLM adoption.</p>
     </div>
   </div>
 
   <div class="row user-projects portfolio-card">
     <div class="six columns">
-      <div class="project-visual">RL</div>
+      <div class="project-visual">AI</div>
     </div>
     <div class="six columns">
-      <h5>Rubric-Grounded SME Preference Alignment</h5>
-      <p class="project-meta">LLM evaluation · GRPO · SME feedback</p>
-      <p>Designed a framework for aligning financial-advisory summaries with expert preferences using structured SME feedback, LLM-as-judge rubrics, rubric validation, and GRPO-based fine-tuning. The approach connects product quality signals directly to model optimization.</p>
+      <h5>AI Community, Reviewing & Mentorship</h5>
+      <p class="project-meta">IEEE · ACM · AAAI · Hackathons</p>
+      <p>Active AI community contributor, IEEE Senior Member, peer reviewer for ACM, AAAI, and IEEE venues, Hackathon Raptors Fellow, Women in Data Science Hackathon coach, and Voxel51 Visual AI Hackathon judge.</p>
     </div>
   </div>
 
   <div class="archive-note">
-    <p>Earlier NYU projects in Spark, Hadoop, Watson APIs, recommender-style analytics, and mobile backend systems are still part of my foundation. The current portfolio emphasizes the production AI systems and research that define my recent work.</p>
+    <p>Earlier NYU and early-career projects in Spark, Hadoop, Kafka, Watson APIs, mobile backends, and real-time transit analytics remain part of my foundation. The current portfolio emphasizes the production AI systems and applied research that define my recent work.</p>
   </div>
 </div>
