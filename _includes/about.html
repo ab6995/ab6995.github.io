@@ -1,50 +1,99 @@
-<div class="container">
-  <div class="user-details">
-    <h3>About</h3>
-    <p class="section-lede">I am a Principal AI/ML Engineer with 8+ years of production experience building LLM-powered applications, agentic systems, and enterprise-scale AI platforms.</p>
-  </div>
-
-  <div class="row user-projects about-grid">
-    <div class="six columns">
+<div class="portfolio-section scale-section">
+  <div class="section-kicker">Scale snapshot</div>
+  <div class="section-heading-row">
+    <div>
+      <h2>What I have built, and the scale it runs at</h2>
+      <p class="section-lede left-align">My work spans the full production AI lifecycle: research, data strategy, model optimization, platform engineering, reliability, evaluation, and enterprise adoption.</p>
+    </div>
+    <div class="profile-mini-card">
       <img alt="Ashish Bansal" src="{{ "/files/me.jpg" | prepend: site.baseurl }}" />
-    </div>
-    <div class="six columns">
-      <p>I work at the intersection of Generative AI, RAG, agentic systems, speech AI, model serving, MLOps, and responsible AI. My recent work focuses on production AI for financial services, where reliability, security, latency, cost, and measurable business value are critical.</p>
-      <p>At Vanguard, I have architected and delivered AI platforms serving 3M+ daily requests, hybrid RAG Agent Assist capabilities, custom vLLM model serving for 30B-parameter models, real-time call summarization, and speech analytics systems processing tens of millions of calls monthly.</p>
-      <p>I graduated from NYU with an M.S. in Computer Science and continue to combine hands-on engineering with applied research, peer review, mentoring, hackathon coaching, and enterprise AI leadership.</p>
+      <div>
+        <strong>Ashish Bansal</strong>
+        <span>Principal AI/ML Engineer</span>
+      </div>
     </div>
   </div>
 
-  <div class="impact-strip">
-    <div class="impact-card">
+  <div class="metric-dashboard">
+    <article class="metric-tile primary-metric">
+      <span class="metric-label">Platform throughput</span>
       <strong>3M+</strong>
-      <span>daily requests served by enterprise AI model deployment infrastructure</span>
-    </div>
-    <div class="impact-card">
-      <strong>12%</strong>
-      <span>retrieval accuracy improvement from hybrid RAG Agent Assist architecture</span>
-    </div>
-    <div class="impact-card">
+      <p>daily requests served by enterprise model deployment infrastructure.</p>
+    </article>
+    <article class="metric-tile">
+      <span class="metric-label">RAG quality</span>
+      <strong>+12%</strong>
+      <p>answer retrieval accuracy improvement from hybrid RAG Agent Assist.</p>
+    </article>
+    <article class="metric-tile">
+      <span class="metric-label">LLM serving</span>
+      <strong>30B</strong>
+      <p>custom model architectures served through vLLM and PagedAttention.</p>
+    </article>
+    <article class="metric-tile">
+      <span class="metric-label">Advice operations</span>
+      <strong>10K+</strong>
+      <p>daily advice calls summarized within one minute of conversation end.</p>
+    </article>
+    <article class="metric-tile">
+      <span class="metric-label">Cost efficiency</span>
       <strong>30x</strong>
-      <span>lower cost for real-time call summarization versus commercial alternatives</span>
-    </div>
-    <div class="impact-card">
-      <strong>2x</strong>
-      <span>throughput improvement using vLLM PagedAttention for custom model serving</span>
-    </div>
+      <p>lower call summarization cost compared with commercial solutions.</p>
+    </article>
+    <article class="metric-tile">
+      <span class="metric-label">Speech analytics</span>
+      <strong>10M+</strong>
+      <p>calls processed monthly with ASR, PII redaction, diarization, and NLP.</p>
+    </article>
   </div>
 
-  <div class="row user skills-row">
-    <div class="four columns skill-card">
-      <h5>LLM & Agentic AI</h5>
+  <div class="visual-story-grid">
+    <article class="story-card">
+      <h3>Production AI lifecycle</h3>
+      <div class="lifecycle-flow">
+        <span>Research</span>
+        <span>Data</span>
+        <span>Model</span>
+        <span>Serve</span>
+        <span>Monitor</span>
+      </div>
+      <p>Owns the bridge from research hypothesis to production deployment, monitoring, and operational handoff.</p>
+    </article>
+
+    <article class="story-card">
+      <h3>Impact areas</h3>
+      <div class="impact-bars">
+        <div class="bar-row"><span>LLM platforms</span><div class="bar-track"><i style="width: 96%"></i></div></div>
+        <div class="bar-row"><span>RAG / Agents</span><div class="bar-track"><i style="width: 88%"></i></div></div>
+        <div class="bar-row"><span>Speech AI</span><div class="bar-track"><i style="width: 92%"></i></div></div>
+        <div class="bar-row"><span>Reliability</span><div class="bar-track"><i style="width: 84%"></i></div></div>
+      </div>
+    </article>
+
+    <article class="story-card">
+      <h3>Role evolution</h3>
+      <ol class="timeline-list">
+        <li><strong>2018</strong><span>AI/ML Engineer: ASR, NLP, Spark/Kafka pipelines</span></li>
+        <li><strong>2020</strong><span>Senior AI/ML Engineer: summarization, speech analytics, mentoring</span></li>
+        <li><strong>2023</strong><span>Principal AI/ML Engineer: LLM platforms, vLLM, RAG, reliability</span></li>
+      </ol>
+    </article>
+  </div>
+
+  <div class="capability-grid">
+    <div class="capability-card">
+      <span>01</span>
+      <h3>LLM & Agentic AI</h3>
       <p>RAG architectures, prompt and context engineering, agent design, LLM evaluation, optimization, quantization, and Azure OpenAI Services.</p>
     </div>
-    <div class="four columns skill-card">
-      <h5>ML Systems</h5>
-      <p>NLP, ASR, speaker verification, sentiment and emotion analysis, model serving, Kubernetes, Docker, AWS, Azure, Spark, Kafka, and vector databases.</p>
+    <div class="capability-card">
+      <span>02</span>
+      <h3>ML Systems</h3>
+      <p>NLP, ASR, speaker verification, sentiment analysis, model serving, Kubernetes, Docker, AWS, Azure, Spark, Kafka, and vector databases.</p>
     </div>
-    <div class="four columns skill-card">
-      <h5>Leadership</h5>
+    <div class="capability-card">
+      <span>03</span>
+      <h3>Leadership</h3>
       <p>Enterprise AI architecture, research-to-production delivery, reliability stabilization, mentoring, peer review, hackathon coaching, and responsible AI.</p>
     </div>
   </div>
