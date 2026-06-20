@@ -1,39 +1,51 @@
 <div class="container">
   <div class="user-details">
-    <h3> Who am I </h3>
+    <h3>About</h3>
+    <p class="section-lede">I am a Principal Machine Learning Engineer focused on turning advanced AI research into secure, reliable, and cost-efficient enterprise platforms.</p>
   </div>
-  <div class="row user-projects">
+
+  <div class="row user-projects about-grid">
     <div class="six columns">
-      <img alt="me" src="{{ " /files/me.jpg " | prepend: site.baseurl }}" />
+      <img alt="Ashish Bansal" src="{{ "/files/me.jpg" | prepend: site.baseurl }}" />
     </div>
     <div class="six columns">
-      <p>Innovative and motivated Data and Software engineer with two years of experience in "object-oriented design, Machine learning, Big Data technologies, deep knowledge of data structure and algorithms". My detailed expertise can be
-      found in <a class="link" href="{{site.url}}/resume">Resume</a></p>
-      <p>Besides coding, I always explore the recent trends in the fitness industry and being a fitness enthusiast, I want to contribute to this industry in the future. </p>
-      <p>I pick something new to learn every year and new adventures to complete. Life is officially too short for my long list of things to learn.</p>
+      <p>I work at the intersection of machine learning engineering, Generative AI, speech AI, LLM infrastructure, MLOps, and responsible AI governance. My recent work has centered on building proprietary AI systems for financial services, where accuracy, privacy, latency, cost, and operational reliability all matter.</p>
+      <p>At Vanguard, I have led and contributed to enterprise AI platforms used across high-value production use cases, including proprietary ASR, advisor-client call summarization, agent-assist workflows, PII protection, domain-aligned LLMs, and cost-aware LLM deployment patterns.</p>
+      <p>I graduated from NYU with an M.S. in Computer Science and continue to combine hands-on engineering with research, architecture, mentoring, and cross-functional AI strategy.</p>
     </div>
   </div>
 
+  <div class="impact-strip">
+    <div class="impact-card">
+      <strong>$10M+</strong>
+      <span>enterprise AI cost and efficiency impact across production systems</span>
+    </div>
+    <div class="impact-card">
+      <strong>98.7%</strong>
+      <span>accuracy achieved by an internal financial-domain ASR platform</span>
+    </div>
+    <div class="impact-card">
+      <strong>15x</strong>
+      <span>lower ASR operating cost compared with a vendor alternative</span>
+    </div>
+    <div class="impact-card">
+      <strong>5x</strong>
+      <span>LLM serving cost reduction demonstrated through CALM-LLM research</span>
+    </div>
+  </div>
 
-  <div class="row user">
-    <div class="four columns">
-      <h5>Code</h5>
-      <i class="devicon-python-plain-wordmark"></i>
-      <i class="devicon-java-plain-wordmark colored"></i>
-      <i class="devicon-cplusplus-plain colored"></i>
+  <div class="row user skills-row">
+    <div class="four columns skill-card">
+      <h5>AI / ML</h5>
+      <p>Generative AI, LLM fine-tuning, RAG, NLP, speech recognition, summarization, preference alignment, LLM evaluation.</p>
     </div>
-    <div class="four columns">
-      <h5>Frameworks</h5>
-      <i class="devicon-apache-plain-wordmark colored"></i>
-      <i class="devicon-django-plain colored"></i>
-      <i class="devicon-oracle-original colored"></i>
+    <div class="four columns skill-card">
+      <h5>Platforms</h5>
+      <p>Kubernetes, AWS, scalable inference, model serving, GPU optimization, distributed systems, MLOps, observability.</p>
     </div>
-    <div class="four columns">
-      <h5>Tools</h5>
-      <i class="devicon-git-plain-wordmark colored"></i>
-      <i class="devicon-postgresql-plain-wordmark colored"></i>
-      <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
-      <i class="devicon-docker-plain-wordmark colored"></i>
+    <div class="four columns skill-card">
+      <h5>Leadership</h5>
+      <p>AI architecture, responsible AI governance, enterprise adoption, mentoring, executive communication, applied research.</p>
     </div>
   </div>
 </div>
