@@ -1,100 +1,138 @@
-<div class="container">
-  <div class="user-details">
-    <h3>Selected Work & Research</h3>
-    <p class="section-lede">A representative snapshot of enterprise AI systems, applied research, production architecture, and developer-community work.</p>
-  </div>
-
-  <div class="row user-projects portfolio-card">
-    <div class="six columns images">
-      <div class="project-visual">RAG</div>
-    </div>
-    <div class="six columns">
-      <h5>Hybrid RAG Agent Assist</h5>
-      <p class="project-meta">Agentic AI · Pinecone · Enterprise support</p>
-      <p>Led development of an enterprise Agent Assist capability that combines dense retrieval, Pinecone vector search, custom re-ranking, and context-aware generation. The system improved answer retrieval accuracy by 12%, reduced average agent call-handling time, and was featured in a public Pinecone customer story.</p>
+<div class="portfolio-section systems-section">
+  <div class="section-kicker">Selected systems</div>
+  <div class="section-heading-row compact-heading">
+    <div>
+      <h2>AI systems, platforms, and research at production scale</h2>
+      <p class="section-lede left-align">Each card highlights the problem space, the architecture pattern, and the measurable scale or outcome.</p>
     </div>
   </div>
 
-  <div class="row user-projects portfolio-card">
-    <div class="six columns">
-      <div class="project-visual">EKS</div>
-    </div>
-    <div class="six columns">
-      <h5>Unified Model Deployment Framework</h5>
-      <p class="project-meta">Kubernetes · Model serving · Platform engineering</p>
-      <p>Developed an EKS-based deployment framework that serves LLMs, ASR, and other ML models behind a single inference gateway. The platform scales to 3M+ requests per day while standardizing orchestration, autoscaling, and per-model deployment workflows.</p>
-    </div>
+  <div class="case-study-grid">
+    <article class="case-card feature-case">
+      <div class="case-content">
+        <span class="case-tag">Agentic AI · Pinecone · Enterprise support</span>
+        <h3>Hybrid RAG Agent Assist</h3>
+        <p>Enterprise support assistant combining dense retrieval, Pinecone vector search, custom re-ranking, and context-aware generation.</p>
+        <div class="case-metrics">
+          <div><strong>+12%</strong><span>retrieval accuracy</span></div>
+          <div><strong>Lower AHT</strong><span>agent handling time</span></div>
+        </div>
+      </div>
+      <div class="system-diagram rag-diagram" aria-label="RAG architecture diagram">
+        <span>Policy content</span>
+        <i></i>
+        <span>Pinecone index</span>
+        <i></i>
+        <span>Re-ranker</span>
+        <i></i>
+        <span>Agent answer</span>
+      </div>
+    </article>
+
+    <article class="case-card">
+      <div class="case-content">
+        <span class="case-tag">Kubernetes · EKS · Inference gateway</span>
+        <h3>Unified Model Deployment Framework</h3>
+        <p>EKS-based framework serving LLMs, ASR, and ML models behind a single inference gateway with standardized orchestration and autoscaling.</p>
+        <div class="case-metrics">
+          <div><strong>3M+</strong><span>requests/day</span></div>
+          <div><strong>1</strong><span>shared gateway</span></div>
+        </div>
+      </div>
+      <div class="system-stack">
+        <span>Gateway</span><span>Autoscaling</span><span>LLM</span><span>ASR</span><span>Eval</span>
+      </div>
+    </article>
+
+    <article class="case-card">
+      <div class="case-content">
+        <span class="case-tag">vLLM · PagedAttention · LLM optimization</span>
+        <h3>Custom vLLM Serving for 30B Models</h3>
+        <p>Custom model architectures for 30B, 8B, and small language models using vLLM and PagedAttention for cost-effective proprietary model serving.</p>
+        <div class="case-metrics">
+          <div><strong>30B</strong><span>model scale</span></div>
+          <div><strong>2x</strong><span>throughput lift</span></div>
+        </div>
+      </div>
+      <div class="throughput-visual">
+        <div><span>Naive KV</span><b style="width: 48%"></b></div>
+        <div><span>PagedAttention</span><b style="width: 96%"></b></div>
+      </div>
+    </article>
+
+    <article class="case-card">
+      <div class="case-content">
+        <span class="case-tag">SDKs · Secure auth · Platform adoption</span>
+        <h3>Enterprise LLM Consumption Model</h3>
+        <p>Reusable Node.js and Python SDKs with secure token-based authentication for product teams building LLM-powered features.</p>
+        <div class="case-metrics">
+          <div><strong>6+</strong><span>product teams</span></div>
+          <div><strong>Faster</strong><span>time to production</span></div>
+        </div>
+      </div>
+      <div class="adoption-rings">
+        <span>SDK</span><span>Auth</span><span>Teams</span>
+      </div>
+    </article>
+
+    <article class="case-card">
+      <div class="case-content">
+        <span class="case-tag">Custom LLMs · NLP · Advice workflows</span>
+        <h3>Real-Time Advice Call Summarization</h3>
+        <p>Self-hosted custom LLMs and domain-specific business logic generate advisor-call summaries within one minute of conversation end.</p>
+        <div class="case-metrics">
+          <div><strong>10K+</strong><span>calls/day</span></div>
+          <div><strong>30x</strong><span>lower cost</span></div>
+        </div>
+      </div>
+      <div class="latency-card">
+        <span>Call ends</span>
+        <strong>&lt; 1 min</strong>
+        <span>Summary ready</span>
+      </div>
+    </article>
+
+    <article class="case-card">
+      <div class="case-content">
+        <span class="case-tag">ASR · PII redaction · Speech intelligence</span>
+        <h3>Enterprise Speech Analytics Platform</h3>
+        <p>Speech-to-text and NLP analytics platform with PII redaction, diarization, sentiment/emotion detection, and domain evaluation.</p>
+        <div class="case-metrics">
+          <div><strong>10M+</strong><span>calls/month</span></div>
+          <div><strong>130K+</strong><span>transcriptions/day</span></div>
+        </div>
+      </div>
+      <div class="audio-wave" aria-label="Audio waveform visualization">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+    </article>
   </div>
 
-  <div class="row user-projects portfolio-card">
-    <div class="six columns images">
-      <div class="project-visual">vLLM</div>
-    </div>
-    <div class="six columns">
-      <h5>Custom vLLM Serving for 30B Models</h5>
-      <p class="project-meta">LLM infrastructure · PagedAttention · Cost optimization</p>
-      <p>Wrote custom model architectures for 30B, 8B, and small language models in the vLLM serving framework. Leveraging PagedAttention delivered about 2x throughput improvement over naive KV-cache allocation and enabled cost-effective serving of proprietary models at enterprise scale.</p>
-    </div>
-  </div>
-
-  <div class="row user-projects portfolio-card">
-    <div class="six columns">
-      <div class="project-visual">SDK</div>
-    </div>
-    <div class="six columns">
-      <h5>Enterprise LLM Service Consumption Model</h5>
-      <p class="project-meta">SDKs · Secure auth · Platform adoption</p>
-      <p>Architected reusable Node.js and Python SDKs with secure token-based authentication for enterprise LLM consumption. The model was adopted by 6+ product teams, eliminated redundant platform builds, and accelerated time-to-production for LLM-powered features.</p>
-    </div>
-  </div>
-
-  <div class="row user-projects portfolio-card">
-    <div class="six columns images">
-      <div class="project-visual">SUM</div>
-    </div>
-    <div class="six columns">
-      <h5>Real-Time Advice Call Summarization</h5>
-      <p class="project-meta">Custom LLMs · NLP · Financial advice</p>
-      <p>Developed a real-time call summarization system for 10K+ daily advice calls, generating summaries within one minute of conversation end using self-hosted custom LLMs and domain-specific business logic. The system achieved 90% summarization accuracy at 30x lower cost compared with commercial solutions.</p>
-    </div>
-  </div>
-
-  <div class="row user-projects portfolio-card">
-    <div class="six columns">
-      <div class="project-visual">ASR</div>
-    </div>
-    <div class="six columns">
-      <h5>Enterprise Speech Analytics Platform</h5>
-      <p class="project-meta">ASR · PII redaction · Speech intelligence</p>
-      <p>Built and scaled an enterprise speech-to-text and NLP analytics platform with PII redaction, speaker diarization, and sentiment/emotion detection. The platform processes tens of millions of calls per month across multiple lines of business and surfaces actionable insights for operations leaders.</p>
-    </div>
-  </div>
-
-  <div class="row user-projects portfolio-card publication-card">
-    <div class="six columns images">
-      <div class="project-visual">CALM</div>
-    </div>
-    <div class="six columns">
-      <h5>CALM: Cost-efficient, Model Agnostic, Low-latency Modular LLM Deployment Framework</h5>
-      <p class="project-meta">IEEE AAIML 2026 · Mar 20, 2026 · LLM deployment research</p>
+  <article class="research-panel">
+    <div class="research-copy">
+      <span class="case-tag">IEEE AAIML 2026 · Mar 20, 2026</span>
+      <h3>CALM: Cost-efficient, Model Agnostic, Low-latency Modular LLM Deployment Framework</h3>
       <p>CALM is a purpose-built, cost-aware LLM deployment methodology for production AI teams. It addresses high third-party inference costs, dynamic SLA requirements, and always-on production reliability through dynamic autoscaling, workload-aware dedicated tenancy, and intelligent resource orchestration.</p>
-      <p>Empirical results demonstrate up to 5x inference cost reduction compared with managed hosted solutions under high-load conditions, while providing practical deployment patterns for scalable, performant, and cost-optimized LLM applications.</p>
-      <a class="project-link wide-link" target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/abstract/document/11498121">Show publication</a>
+      <p>Empirical results demonstrate up to 5x inference cost reduction compared with managed hosted solutions under high-load conditions.</p>
+      <a class="primary-cta dark-cta" target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/abstract/document/11498121">Show publication</a>
     </div>
-  </div>
+    <div class="research-visual">
+      <div class="cost-compare">
+        <div><span>Managed hosted</span><b style="height: 92%"></b></div>
+        <div><span>CALM</span><b style="height: 22%"></b></div>
+      </div>
+      <div class="research-stat"><strong>5x</strong><span>inference cost reduction</span></div>
+    </div>
+  </article>
 
-  <div class="row user-projects portfolio-card">
-    <div class="six columns">
-      <div class="project-visual">AI</div>
+  <div class="community-band">
+    <div>
+      <span class="section-kicker">Community</span>
+      <h3>Reviewer, coach, judge, and builder-community contributor</h3>
+      <p>IEEE Senior Member, peer reviewer for ACM, AAAI, and IEEE venues, Hackathon Raptors Fellow, Women in Data Science Hackathon coach, and Voxel51 Visual AI Hackathon judge.</p>
     </div>
-    <div class="six columns">
-      <h5>AI Community, Reviewing & Mentorship</h5>
-      <p class="project-meta">IEEE · ACM · AAAI · Hackathons</p>
-      <p>Active AI community contributor, IEEE Senior Member, peer reviewer for ACM, AAAI, and IEEE venues, Hackathon Raptors Fellow, Women in Data Science Hackathon coach, and Voxel51 Visual AI Hackathon judge.</p>
+    <div class="community-pills">
+      <span>ACM ICAIF</span><span>AAAI</span><span>IEEE ICECET</span><span>IEEE ACDSA</span><span>ACM FINIR</span><span>Voxel51</span>
     </div>
-  </div>
-
-  <div class="archive-note">
-    <p>Earlier NYU and early-career projects in Spark, Hadoop, Kafka, Watson APIs, mobile backends, and real-time transit analytics remain part of my foundation. The current portfolio emphasizes the production AI systems and applied research that define my recent work.</p>
   </div>
 </div>
