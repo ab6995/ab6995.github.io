@@ -80,6 +80,21 @@ li {
   margin-bottom: 0;
 }
 
+.resume-download {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.resume-download:hover {
+  background: #fff;
+  color: #1a222c;
+  text-decoration: none;
+}
+
 .resume-item {
   margin-bottom: 26px;
 }
