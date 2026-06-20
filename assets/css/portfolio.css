@@ -82,6 +82,10 @@
   box-sizing: border-box;
 }
 
+.publication-card h5 {
+  line-height: 1.35;
+}
+
 .project-meta {
   margin-top: -8px;
   color: #6f7a8a !important;
@@ -101,6 +105,13 @@
   font-size: 48px;
   font-weight: 800;
   letter-spacing: 0.08em;
+}
+
+.wide-link {
+  display: inline-block;
+  width: auto;
+  min-width: 135px;
+  padding: 8px 14px;
 }
 
 .archive-note {
