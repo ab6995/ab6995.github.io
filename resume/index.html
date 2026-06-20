@@ -5,91 +5,117 @@ title: Ashish Bansal
 
 <header class="resume-hero">
   <h1>{{ page.title }}</h1>
-  <p class="resume-subtitle">Principal Machine Learning Engineer | Enterprise AI, GenAI, Speech AI & LLM Infrastructure</p>
+  <p class="resume-subtitle">Principal AI/ML Engineer | LLM-Powered Applications, Agentic Systems & Enterprise AI Platforms</p>
   <p class="resume-contact">
+    Exton, PA ·
     <a href="mailto:{{site.email}}">{{site.email}}</a> ·
-    <a href="https://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" rel="noopener">LinkedIn</a> ·
-    <a href="https://github.com/{{site.github_username}}" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://github.com/{{site.github_username}}" target="_blank" rel="noopener">GitHub</a> ·
+    <a href="https://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" rel="noopener">LinkedIn</a>
   </p>
+  <p><a class="resume-download" href="/files/resume_ash.pdf">Download full PDF resume</a></p>
 </header>
 
 <section>
   <h2>Summary</h2>
-  <p>Principal Machine Learning Engineer with deep experience building production AI systems for financial services. I specialize in Generative AI, LLM deployment, speech recognition, NLP, MLOps, responsible AI governance, and cost-efficient enterprise AI platforms. My work spans research, architecture, hands-on engineering, mentoring, stakeholder leadership, and production operations.</p>
+  <p>Principal AI/ML Engineer with 8+ years of production experience building LLM-powered applications, agentic systems, and enterprise-scale AI platforms serving 3M+ daily requests. Experienced in RAG, model serving, speech analytics, LLM optimization, Kubernetes production reliability, evaluation frameworks, and safe, cost-efficient enterprise AI adoption.</p>
 </section>
 
 <section>
-  <h2>Core Strengths</h2>
+  <h2>Technical Skills</h2>
   <ul class="two-column-list">
-    <li>Generative AI, LLM fine-tuning, RAG, LLM evaluation, preference alignment</li>
-    <li>Speech AI, NLP, summarization, PII protection, responsible AI controls</li>
-    <li>Model serving, Kubernetes, AWS, scalable inference, observability, MLOps</li>
-    <li>GPU-aware AI architecture, cost optimization, latency optimization, SLA design</li>
-    <li>Enterprise architecture, stakeholder communication, mentoring, AI strategy</li>
-    <li>Python, Spark, SQL, Docker, distributed systems, data engineering</li>
+    <li><strong>LLM & Agentic AI:</strong> RAG architectures, prompt and context engineering, agent design, evaluation frameworks, LLM optimization and quantization, Azure OpenAI Services.</li>
+    <li><strong>ML/AI Domains:</strong> NLP, ASR, speaker verification, sentiment and emotion analysis, computer vision.</li>
+    <li><strong>Languages:</strong> Python, Node.js, Java, C/C++.</li>
+    <li><strong>Infrastructure:</strong> Kubernetes, Docker, AWS, Azure, serverless architectures, HPC compute.</li>
+    <li><strong>Vector & Data Stores:</strong> Pinecone, DynamoDB, PostgreSQL, Neptune, MS SQL Server.</li>
+    <li><strong>Frameworks & Tools:</strong> TensorFlow, PyTorch, Scikit-learn, Apache Spark, Hadoop, Kafka.</li>
   </ul>
 </section>
 
 <section>
-  <h2>Professional Experience</h2>
+  <h2>Work Experience</h2>
 
   <div class="resume-item">
-    <h3>The Vanguard Group</h3>
-    <p><em>Principal Machine Learning Engineer, Enterprise AI Research</em> · 2018 – Present</p>
+    <h3>Principal AI/ML Engineer - Vanguard</h3>
+    <p><em>Malvern, PA · Jul 2023 - Present</em></p>
     <ul>
-      <li>Lead and build production-grade AI and ML systems across Generative AI, NLP, speech AI, MLOps, data protection, and enterprise AI platform capabilities.</li>
-      <li>Helped deliver AI products and platforms associated with more than $10M in operational efficiency and cost impact across enterprise use cases.</li>
-      <li>Built and scaled a proprietary financial-domain ASR system that achieved 98.7% internal accuracy, materially outperformed a cloud transcription baseline, and operated at roughly 15x lower cost.</li>
-      <li>Contributed to privacy-preserving AI capabilities, including sensitive-data protection and PII redaction patterns that enable safer enterprise GenAI adoption.</li>
-      <li>Led architecture and engineering design for advisor-client call summarization and agent-assist workflows, including model quality controls and production-readiness considerations.</li>
-      <li>Contributed to DeepCI, a production cost-intelligence platform associated with approximately $5.5M–$6M in annualized savings and multi-year enterprise adoption.</li>
-      <li>Develop reusable blueprints for deploying AI applications with strong attention to cost, latency, reliability, governance, security, and user adoption.</li>
-      <li>Mentor engineers and contribute to enterprise AI strategy, responsible AI practices, and cross-functional decision-making.</li>
+      <li>Led development of a hybrid RAG Agent Assist capability for enterprise customer support, combining dense retrieval with Pinecone, custom re-ranking, and context-aware generation; improved answer retrieval accuracy by 12% and reduced average agent call-handling time.</li>
+      <li>Developed a unified model deployment framework on EKS to serve LLMs, ASR, and other ML models behind a single inference gateway, scaling to 3M+ requests per day while standardizing orchestration and autoscaling policies.</li>
+      <li>Wrote custom model architectures for 30B, 8B, and small language models in vLLM, leveraging PagedAttention to achieve about 2x throughput improvement over naive KV-cache allocation.</li>
+      <li>Architected reusable Node.js and Python SDKs with secure token-based authentication for enterprise LLM consumption, adopted by 6+ product teams.</li>
+      <li>Designed an ingestion and index freshness strategy for high-churn policy content using custom chunking and metadata-based live-versus-stale filtering for auditability and current guidance.</li>
+      <li>Created an LLM evaluation framework with custom datasets and automated scoring pipelines for gap identification, model benchmarking, selection, and fine-tuning priorities.</li>
+      <li>Led production reliability stabilization for AI services on Kubernetes through root-cause analysis, capacity controls, and autoscaling guardrails.</li>
+      <li>Led research and optimization of Vanguard's proprietary LLM using quantization and distillation techniques to reduce inference costs while maintaining quality parity; results published at IEEE AAIML 2026.</li>
     </ul>
   </div>
 
   <div class="resume-item">
-    <h3>MTA New York City Transit</h3>
-    <p><em>Systems & Data Science Research Intern</em> · 2017 – 2018</p>
+    <h3>Senior AI/ML Engineer - Vanguard</h3>
+    <p><em>Malvern, PA · Aug 2020 - Jul 2023</em></p>
     <ul>
-      <li>Built Python-based APIs, ETL scripts, analytics workflows, and machine learning classifiers for performance metrics and ridership insights.</li>
-      <li>Worked with real-time data pipelines using Kafka and streaming data sources.</li>
+      <li>Developed a real-time call summarization system for 10K+ daily advice calls, generating summaries within one minute of conversation end using self-hosted custom LLMs and domain-specific business logic.</li>
+      <li>Achieved 90% summarization accuracy at 30x lower cost compared with commercial solutions.</li>
+      <li>Built and scaled an enterprise speech-to-text and NLP analytics platform with PII redaction, speaker diarization, and sentiment/emotion detection, processing tens of millions of calls per month across multiple lines of business.</li>
+      <li>Improved transcription accuracy through iterative model and pipeline tuning and established a repeatable WER evaluation harness adopted as the enterprise standard.</li>
+      <li>Owned end-to-end delivery of large-scale AI/ML projects from research hypothesis and data strategy through production deployment, monitoring, and handoff.</li>
+      <li>Mentored a team of 4 junior ML engineers and data scientists on deep learning practices, code reviews, and research-to-production workflows.</li>
     </ul>
   </div>
 
   <div class="resume-item">
-    <h3>HCL Technologies</h3>
-    <p><em>Software Engineer Intern</em> · 2015 – 2016</p>
+    <h3>AI/ML Engineer - Vanguard</h3>
+    <p><em>Malvern, PA · Sep 2018 - Aug 2020</em></p>
     <ul>
-      <li>Worked on C++ software development, bug tracking, requirement implementation, and agile delivery practices.</li>
+      <li>Integrated a custom ASR model into the Hugging Face Transformers package, leveraging native optimizations for scalable production deployment and processing 130K+ transcriptions, about 1.3M minutes of audio, per day.</li>
+      <li>Co-designed proprietary ASR and NLP systems, building language models and evaluation tooling that outperformed third-party providers on domain-specific benchmarks.</li>
+      <li>Developed production ML data pipelines for speech-processing workloads using Spark and Kafka, reducing data preparation time and accelerating model iteration.</li>
+    </ul>
+  </div>
+
+  <div class="resume-item">
+    <h3>Data Science Research Intern - MTA NYCT</h3>
+    <p><em>Manhattan, NY · Sep 2017 - Aug 2018</em></p>
+    <ul>
+      <li>Built Python APIs for real-time performance metrics and ridership estimation, aggregating data from multiple transit feeds for operational monitoring.</li>
+      <li>Implemented Kafka-based streaming ingestion from multiple real-time sources, replacing batch polling and enabling near-real-time analytics dashboards.</li>
     </ul>
   </div>
 </section>
 
 <section>
-  <h2>Selected AI Systems & Research</h2>
-  <ul>
-    <li><strong>CALM-LLM:</strong> First-author research on cost-aware LLM deployment, dynamic autoscaling, tenancy, cold-start optimization, TTFT/ITL tradeoffs, and SLA-aware orchestration; accepted for IEEE AAIML oral presentation.</li>
-    <li><strong>Rubric-Grounded SME Preference Alignment:</strong> Designed a framework using structured SME feedback, LLM-as-judge rubrics, rubric validation, and GRPO fine-tuning for financial-advisory summarization quality.</li>
-    <li><strong>Enterprise GenAI Platform:</strong> Built domain-aligned LLM and reusable adoption patterns for secure, cost-conscious GenAI use in financial-services workflows.</li>
-    <li><strong>ASR for Financial Conversations:</strong> Built privacy-preserving transcription capabilities that improved accuracy and reduced operating cost versus external alternatives.</li>
-    <li><strong>AI Data Protection:</strong> Developed AI-powered sensitive-data protection patterns to support responsible enterprise AI adoption.</li>
-  </ul>
+  <h2>Publication</h2>
+  <p><strong>Bansal, A. et al.</strong> - "Cost-Efficient, Model-Agnostic, Low-Latency LLM Deployment" - IEEE AAIML 2026, February 2026.</p>
 </section>
 
 <section>
   <h2>Education</h2>
   <div class="resume-item">
     <h3>New York University, Tandon School of Engineering</h3>
-    <p>M.S. in Computer Science</p>
+    <p>M.S. in Computer Science · GPA: 3.7 · Brooklyn, NY · May 2018</p>
   </div>
   <div class="resume-item">
-    <h3>SRM University</h3>
-    <p>B.Tech. in Computer Science</p>
+    <h3>SRM University, NCR Campus</h3>
+    <p>B.Tech. in Computer Science · GPA: 3.4 · India · May 2015</p>
   </div>
 </section>
 
 <section>
-  <h2>Earlier Project Foundation</h2>
-  <p>Earlier academic and engineering projects included Spark and Hadoop analytics, NYPD complaint data analysis, Yelp dataset analysis, Twitter bot classification, IBM Watson Personality Insights, and an AWS-backed offline news mobile application. These projects formed the technical base for later large-scale enterprise AI work.</p>
+  <h2>Community & Developer Engagement</h2>
+  <ul>
+    <li><strong>IEEE Senior Member:</strong> Active IEEE contributor helping with coaching and conference reviewing.</li>
+    <li><strong>Hackathon Raptors Fellow:</strong> Active fellow supporting hackathon culture and builders across the AI ecosystem.</li>
+    <li><strong>Women in Data Science Hackathon Coach:</strong> Coached a competing team through problem framing, technical architecture, and AI implementation.</li>
+    <li><strong>Voxel51 Visual AI Hackathon Judge:</strong> Evaluated computer vision and visual AI submissions.</li>
+    <li><strong>Peer Reviewer:</strong> ACM ICAIF 2025, AAAI 2025, IEEE ICECET 2025, IEEE ACDSA 2025, ACM FINIR 2025, IEEE ICECET 2026, and IEEE ACDSA 2026.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Awards & Recognition</h2>
+  <ul>
+    <li>Multiple Vanguard Spot Awards for outstanding technical performance.</li>
+    <li>NYU Scholarship recipient - top 5% of CS graduate program.</li>
+    <li>First place, App Builder Competition - SRM University.</li>
+  </ul>
 </section>
