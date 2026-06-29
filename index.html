@@ -1,5 +1,270 @@
 ---
-layout: default
-title: Ashish Bansal | Enterprise AI, GenAI & ML Systems
-description: Portfolio of Ashish Bansal, Principal Machine Learning Engineer focused on production GenAI, speech AI, LLM optimization, MLOps, and enterprise AI leadership.
+layout: null
 ---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ashish Bansal • Portfolio</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Site Styles: reference our custom CSS under assets -->
+    <link rel="stylesheet" href="/assets/css/modern.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container nav-container">
+        <div class="brand">
+          <span class="initials">AB</span>
+          <div class="brand-text">
+            <span class="name">Ashish Bansal</span>
+            <span class="title">Portfolio</span>
+          </div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero-section">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1>Hello, I'm <span class="highlight">Ashish</span></h1>
+          <h2 class="tagline">Taking AI from research to production</h2>
+          <p class="subtitle">
+            Models, agents and systems that scale across enterprise workloads.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn primary-btn">View Work</a>
+            <a href="#contact" class="btn secondary-btn">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <h2 class="section-title">Experience &amp; Impact</h2>
+        <p class="section-subtitle">
+          I build research-driven AI that makes an impact in production. From fine‑tuning
+          state‑of‑the‑art models to shipping agentic systems for millions of users, my
+          experience spans the full lifecycle of modern ML.
+        </p>
+        <!-- Metrics Row -->
+        <div class="metrics-row">
+          <div class="metric">
+            <span class="metric-value">3M+</span>
+            <span class="metric-label">requests/day</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">30B+</span>
+            <span class="metric-label">parameters served</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">90%</span>
+            <span class="metric-label">cost reduction</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">10K+</span>
+            <span class="metric-label">calls/day summarized</span>
+          </div>
+        </div>
+        <!-- Timeline -->
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Principal AI/ML Engineer</h3>
+              <span class="timeline-date">2025–Present</span>
+              <p>Leading AI/ML at Vanguard: designing enterprise platforms for LLMs, RAG, and
+                real‑time speech analytics. Driving research to production through fine‑tuning,
+                evaluation, deployment and scaling. Mentoring engineers and shaping AI strategy.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Senior AI/ML Engineer</h3>
+              <span class="timeline-date">2023–2025</span>
+              <p>Built hybrid RAG &amp; agentic systems, optimized inference gateways (EKS + vLLM),
+                and implemented guardrails and evaluation pipelines. Improved retrieval
+                accuracy by 12% and doubled throughput of 30B/8B models using Paged
+                Attention.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">AI/ML Engineer</h3>
+              <span class="timeline-date">2020–2023</span>
+              <p>Developed enterprise call‑summarization and speech analytics platform.
+                Delivered 90% cost reduction at 30× higher performance for summarization,
+                supporting tens of millions of calls per month. Delivered MTA NYCT internship
+                projects during graduate studies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <h2 class="section-title">Projects &amp; Systems</h2>
+        <p class="section-subtitle">Selected work spanning LLM platforms, agentic AI and speech intelligence.</p>
+        <div class="projects-grid">
+          <!-- Project Card: RAG Agent Assist -->
+          <div class="project-card reveal">
+            <div class="project-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3 class="project-title">Hybrid RAG Agent Assist</h3>
+            <p class="project-description">
+              Built a hybrid retrieval‑augmented generation system combining Pinecone, in‑house
+              vector DBs and proprietary LLMs. Improved retrieval accuracy by 12%, delivered
+              3M+ daily queries and orchestrated agentic flows for advice and support use cases.
+            </p>
+            <ul class="project-list">
+              <li>Powered by Pinecone + bespoke agent orchestrator</li>
+              <li>Expanded adoption across teams via SDKs &amp; secure auth</li>
+              <li><a href="https://www.pinecone.io/customers/vanguard/" target="_blank">Pinecone customer story</a></li>
+            </ul>
+          </div>
+          <!-- Project Card: Platform & Serving -->
+          <div class="project-card reveal">
+            <div class="project-icon"><i class="fa-solid fa-server"></i></div>
+            <h3 class="project-title">Inference Gateway &amp; Serving</h3>
+            <p class="project-description">
+              Designed an inference gateway on Kubernetes/EKS leveraging vLLM and Paged
+              Attention. Achieved 2× throughput improvement on 30B &amp; 8B models, integrated
+              safety guardrails and evaluation pipelines, and served 3M+ daily requests.
+            </p>
+            <ul class="project-list">
+              <li>Model‑agnostic hosting &amp; autoscaling</li>
+              <li>Evaluations &amp; guardrail architecture</li>
+              <li>SDKs for internal &amp; external integration</li>
+            </ul>
+          </div>
+          <!-- Project Card: Speech Analytics -->
+          <div class="project-card reveal">
+            <div class="project-icon"><i class="fa-solid fa-waveform-lines"></i></div>
+            <h3 class="project-title">Speech Intelligence Platform</h3>
+            <p class="project-description">
+              Built a distributed speech intelligence system converting noisy call audio into
+              readable transcripts enriched with journey, sentiment and emotion signals.
+            </p>
+            <ul class="project-list">
+              <li>10M+ calls/month processed</li>
+              <li>Real‑time ASR &amp; diarization</li>
+              <li>Enriched with journey &amp; sentiment insights</li>
+            </ul>
+          </div>
+          <!-- Project Card: CALM -->
+          <div class="project-card reveal">
+            <div class="project-icon"><i class="fa-solid fa-gauge-high"></i></div>
+            <h3 class="project-title">CALM Deployment Framework</h3>
+            <p class="project-description">
+              Developed CALM—cost‑efficient, model‑agnostic LLM deployment framework.
+              Delivered up to 5× inference cost reductions via dynamic autoscaling,
+              dedicated tenancy and intelligent resource orchestration.
+            </p>
+            <ul class="project-list">
+              <li>Cost‑aware autoscaling &amp; scheduling</li>
+              <li>Production reliability &amp; failover</li>
+              <li><a href="https://ieeexplore.ieee.org/abstract/document/11498121" target="_blank">Read the paper</a></li>
+            </ul>
+          </div>
+          <!-- Project Card: Advisor Model -->
+          <div class="project-card reveal">
+            <div class="project-icon"><i class="fa-solid fa-comments-dollar"></i></div>
+            <h3 class="project-title">Financial Advisor Augmentation</h3>
+            <p class="project-description">
+              Trained a domain‑specialized model for financial advisors and planners using
+              SFT, off‑policy &amp; on‑policy distillation and GRPO. Built a multi‑agent system
+              with short‑ and long‑term memory to orchestrate skills such as retirement,
+              estate, investment planning and compliance.
+            </p>
+            <ul class="project-list">
+              <li>Custom eval dataset for quality &amp; compliance</li>
+              <li>Agent orchestration across skills &amp; memory</li>
+              <li>Tax, asset allocation &amp; behavioral coaching</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section research-section">
+      <div class="container">
+          <h2 class="section-title">Research &amp; Publications</h2>
+          <div class="research-card reveal">
+              <h3>CALM: Cost‑efficient, model‑Agnostic, Low‑latency Modular LLM Deployment Framework</h3>
+              <p>
+                Presented at the 2026 International Conference on Advances in Artificial
+                Intelligence and Machine Learning (AAIML). CALM addresses the cost and
+                complexity of deploying LLMs in production by integrating dynamic
+                autoscaling, workload‑aware dedicated tenancy and intelligent resource
+                orchestration. Experiments show up to 5× cost reductions compared to
+                managed hosted LLMs under high load. The paper provides practical patterns
+                and guidelines for teams building scalable, reliable and cost‑optimized LLM
+                applications.
+              </p>
+              <a href="https://ieeexplore.ieee.org/abstract/document/11498121" target="_blank" class="btn primary-btn">Read Publication</a>
+          </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p>
+          I'm always interested in discussing new ideas, collaborations or speaking
+          opportunities. Feel free to reach out!
+        </p>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/ashish-bansal-7b0b129a/" target="_blank" class="contact-link">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="mailto:ashish@example.com" class="contact-link">
+            <i class="fa-solid fa-envelope"></i> Email
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>© 2026 Ashish Bansal. All rights reserved.</p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/ashish-bansal-7b0b129a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS for interactivity -->
+    <script src="/assets/js/modern.js" defer></script>
+  </body>
+</html>
